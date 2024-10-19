@@ -1,18 +1,19 @@
 {
   "name": "rl-enum",
-  "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --project ./tsconfig.compile.json"
+    "build": "tsc --project ./tsconfig.compile.json",
+    "publish": "pnpm run build && npm publish"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
     "typescript": "^5.5.3",
     "vite": "^5.4.8",
     "vitest": "^2.1.2"
-  }
+  },
+  "packageManager": "pnpm@9.12.2"
 }
